@@ -1,18 +1,19 @@
 enum Affordability { affordable, pricey, luxurious }
+
 enum Complexity { simple, challenging, hard }
 
-class Meal  {
+class Meal {
   final String id;
   final String title;
   final String imageUrl;
-  final int duration;
+  final double price;
   final List<String> categories;
   final List<String> ingredients;
-  final List<String> steps;
-   bool isGlutenFree;
-   bool isVegan;
-   bool isVegetarian;
-   bool isLactoseFree;
+
+  bool isGlutenFree;
+  bool isVegan;
+  bool isVegetarian;
+  bool isLactoseFree;
   final Affordability affordability;
   final Complexity complexity;
 
@@ -20,10 +21,9 @@ class Meal  {
     required this.id,
     required this.title,
     required this.imageUrl,
-    required this.duration,
+    required this.price,
     required this.categories,
     required this.ingredients,
-    required this.steps,
     required this.isGlutenFree,
     required this.isVegan,
     required this.isVegetarian,

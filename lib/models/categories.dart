@@ -5,59 +5,58 @@ class Categories with ChangeNotifier {
   final List<Category> items = [
     Category(
       id: 'c1',
-      title: 'Italian',
+      title: 'Appetizers',
       color: Colors.purple,
     ),
     Category(
       id: 'c2',
-      title: 'Quick & Easy',
+      title: 'Entrees',
       color: Colors.red,
     ),
     Category(
       id: 'c3',
-      title: 'Hamburgers',
+      title: 'Sandwiches',
       color: Colors.orange,
     ),
     Category(
       id: 'c4',
-      title: 'German',
+      title: 'Cold',
       color: Colors.amber,
     ),
     Category(
       id: 'c5',
-      title: 'Light & Lovely',
+      title: 'Hot',
       color: Colors.blue,
     ),
     Category(
       id: 'c6',
-      title: 'Exotic',
+      title: 'Soups & Salad Combos',
       color: Colors.green,
     ),
     Category(
       id: 'c7',
-      title: 'Breakfast',
+      title: 'Fajitas',
       color: Colors.lightBlue,
     ),
     Category(
       id: 'c8',
-      title: 'Asian',
+      title: 'Tacos',
       color: Colors.lightGreen,
     ),
     Category(
       id: 'c9',
-      title: 'French',
+      title: 'Enchildas',
       color: Colors.pink,
     ),
     Category(
       id: 'c10',
-      title: 'Summer',
+      title: 'Quiche',
       color: Colors.teal,
     ),
+    Category(
+      id: 'c11',
+      title: 'Green Salads',
+      color: Colors.blueGrey,
+    ),
   ];
-
-  // List<Category> get items {
-  //   return [..._items];
-  // }
-
-  
 }

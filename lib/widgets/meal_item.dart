@@ -62,11 +62,11 @@ class MealItem extends StatelessWidget {
                 children: [
                   Row(
                     children: [
-                      const Icon(Icons.schedule),
+                      const Icon(Icons.attach_money),
                       const SizedBox(
                         width: 6,
                       ),
-                      Text('${filteredMeal.duration} min')
+                      Text('${filteredMeal.price ?? 0.0} price')
                     ],
                   ),
                   Row(
@@ -81,7 +81,7 @@ class MealItem extends StatelessWidget {
                   ),
                   Row(
                     children: [
-                      const Icon(Icons.attach_money),
+                      const Icon(Icons.money),
                       const SizedBox(
                         width: 6,
                       ),
