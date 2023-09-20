@@ -1,62 +1,65 @@
 import 'package:flutter/material.dart';
 import '../models/category.dart';
 
-class Categories with ChangeNotifier {
+class Categories {
   final List<Category> items = [
     Category(
       id: 'c1',
-      title: 'Appetizers',
+      title: 'Italian',
       color: Colors.purple,
     ),
     Category(
       id: 'c2',
-      title: 'Entrees',
+      title: 'Quick & Easy',
       color: Colors.red,
     ),
     Category(
       id: 'c3',
-      title: 'Sandwiches',
+      title: 'Hamburgers',
       color: Colors.orange,
     ),
     Category(
       id: 'c4',
-      title: 'Cold',
+      title: 'German',
       color: Colors.amber,
     ),
     Category(
       id: 'c5',
-      title: 'Hot',
+      title: 'Light & Lovely',
       color: Colors.blue,
     ),
     Category(
       id: 'c6',
-      title: 'Soups & Salad Combos',
+      title: 'Exotic',
       color: Colors.green,
     ),
     Category(
       id: 'c7',
-      title: 'Fajitas',
+      title: 'Breakfast',
       color: Colors.lightBlue,
     ),
     Category(
       id: 'c8',
-      title: 'Tacos',
+      title: 'Asian',
       color: Colors.lightGreen,
     ),
     Category(
       id: 'c9',
-      title: 'Enchildas',
+      title: 'French',
       color: Colors.pink,
     ),
     Category(
       id: 'c10',
-      title: 'Quiche',
+      title: 'Summer',
       color: Colors.teal,
     ),
-    Category(
-      id: 'c11',
-      title: 'Green Salads',
-      color: Colors.blueGrey,
-    ),
   ];
+
+  // List<Category> get items {
+  //   return [..._items];
+  // }
+
+  // Category findBy(String id) {
+  //   return _items.firstWhere((cat) => cat.id == id);
+  // }
 }

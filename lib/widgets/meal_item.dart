@@ -66,7 +66,7 @@ class MealItem extends StatelessWidget {
                       const SizedBox(
                         width: 6,
                       ),
-                      Text('${filteredMeal.price ?? 0.0} price')
+                      Text('${filteredMeal.duration} duration')
                     ],
                   ),
                   Row(

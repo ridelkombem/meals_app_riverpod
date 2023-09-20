@@ -50,6 +50,24 @@ class MealDetailScreen extends ConsumerWidget {
                 ),
               ),
             ),
+            const BuildTitle(
+              title: 'Steps',
+            ),
+            BuildContainer(
+              child: ListView.builder(
+                itemCount: meal.steps.length,
+                itemBuilder: (context, i) => Card(
+                  color: Theme.of(context).colorScheme.secondary,
+                  child: Padding(
+                    padding:
+                        const EdgeInsets.symmetric(vertical: 5, horizontal: 20),
+                    child: Text(
+                      meal.steps[i],
+                    ),
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ),
